@@ -10,6 +10,10 @@ export const Footer: FC = (): ReactElement => {
         backgroundColor: "secondary.main",
         paddingTop: "1rem",
         paddingBottom: "1rem",
+        position:"fixed",
+        bottom: 0,
+        left: 0,
+        right: 0,
       }}
     >
       <Container maxWidth="lg">

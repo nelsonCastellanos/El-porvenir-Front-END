@@ -40,9 +40,10 @@ function App() {
               />
             ))}
           </Routes>
-          <Footer />
+          
         </Router>
       </Box>
+      <Footer />
     </ThemeProvider>
   );
 }
