@@ -1,0 +1,45 @@
+2022-09-13 08:57:15,499 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2022-09-13 08:57:15,595 INFO o.a.j.JMeter: Loading user properties from: /Users/ncastellanos/Documents/JMETER/bin/user.properties
+2022-09-13 08:57:15,597 INFO o.a.j.JMeter: Loading system properties from: /Users/ncastellanos/Documents/JMETER/bin/system.properties
+2022-09-13 08:57:15,611 INFO o.a.j.JMeter: Copyright (c) 1998-2022 The Apache Software Foundation
+2022-09-13 08:57:15,611 INFO o.a.j.JMeter: Version 5.5
+2022-09-13 08:57:15,611 INFO o.a.j.JMeter: java.version=1.8.0_312
+2022-09-13 08:57:15,611 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2022-09-13 08:57:15,611 INFO o.a.j.JMeter: os.name=Mac OS X
+2022-09-13 08:57:15,611 INFO o.a.j.JMeter: os.arch=x86_64
+2022-09-13 08:57:15,611 INFO o.a.j.JMeter: os.version=10.16
+2022-09-13 08:57:15,611 INFO o.a.j.JMeter: file.encoding=UTF-8
+2022-09-13 08:57:15,612 INFO o.a.j.JMeter: java.awt.headless=null
+2022-09-13 08:57:15,612 INFO o.a.j.JMeter: Max memory     =1073741824
+2022-09-13 08:57:15,612 INFO o.a.j.JMeter: Available Processors =12
+2022-09-13 08:57:15,621 INFO o.a.j.JMeter: Default Locale=English (EN)
+2022-09-13 08:57:15,621 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2022-09-13 08:57:15,621 INFO o.a.j.JMeter: JMeterHome=/Users/ncastellanos/Documents/JMETER
+2022-09-13 08:57:15,621 INFO o.a.j.JMeter: user.dir  =/Users/ncastellanos/Documents/practicas_II/el_porvenir_front/el_porvenir
+2022-09-13 08:57:15,621 INFO o.a.j.JMeter: PWD       =/Users/ncastellanos/Documents/practicas_II/el_porvenir_front/el_porvenir
+2022-09-13 08:57:15,627 INFO o.a.j.JMeter: IP: 192.168.10.12 Name: CO0C02FQD20MD6M FullName: 192.168.10.12
+2022-09-13 08:57:15,657 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2022-09-13 08:57:18,937 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.IntelliJTheme
+2022-09-13 08:59:54,194 INFO o.a.j.s.FileServer: Default base='/Users/ncastellanos/Documents/practicas_II/el_porvenir_front/el_porvenir'
+2022-09-13 08:59:54,198 INFO o.a.j.g.a.Load: Loading file: /Users/ncastellanos/Documents/MELI/Proyectos/alejandria4/fury_kms-alejandria/jmeter_test/load_test.jmx
+2022-09-13 08:59:54,198 INFO o.a.j.s.FileServer: Set new base='/Users/ncastellanos/Documents/MELI/Proyectos/alejandria4/fury_kms-alejandria/jmeter_test'
+2022-09-13 08:59:54,393 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2022-09-13 08:59:54,423 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2022-09-13 08:59:54,425 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2022-09-13 08:59:54,428 INFO o.a.j.s.SaveService: Loading file: /Users/ncastellanos/Documents/MELI/Proyectos/alejandria4/fury_kms-alejandria/jmeter_test/load_test.jmx
+2022-09-13 08:59:54,468 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2022-09-13 08:59:54,530 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-09-13 08:59:54,530 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-09-13 08:59:54,530 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-09-13 08:59:54,530 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-09-13 08:59:54,531 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2022-09-13 08:59:54,531 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2022-09-13 08:59:56,860 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
+2022-09-13 08:59:56,861 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /Users/ncastellanos/Documents/JMETER/bin/proxyserver.jks
+2022-09-13 08:59:57,451 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2022-09-13 08:59:57,451 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2022-09-13 08:59:57,452 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2022-09-13 08:59:57,452 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2022-09-13 08:59:57,724 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2022-09-13 08:59:57,936 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2022-09-13 08:59:58,011 INFO o.a.j.s.FileServer: Set new base='/Users/ncastellanos/Documents/MELI/Proyectos/alejandria4/fury_kms-alejandria/jmeter_test'
