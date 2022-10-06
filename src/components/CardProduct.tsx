@@ -7,12 +7,12 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 export default function MultiActionAreaCard() {
   return (
-    <Card sx={{ maxWidth: 345 ,width: 345}}>
+    <Card sx={{ maxWidth: 345 ,width: "100%"}}>
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
+          height="160"
+          image={require('../img/bee.jpg')}
           alt="green iguana"
         />
         <CardContent>
@@ -25,7 +25,7 @@ export default function MultiActionAreaCard() {
           <Typography component="div" variant="h6" color="#424242">
             $price
           </Typography>
-          <CardContent></CardContent>
+          
         </CardContent>
       </CardActionArea>
       <CardActions>
