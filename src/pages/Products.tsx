@@ -1,9 +1,31 @@
-import React, {ReactElement, FC} from "react";
+import React, {ReactElement, FC,useEffect,useState,useRef} from "react";
+import { getProducts } from "../services/HomeService";
 import {Box, Typography} from "@mui/material";
 import CardProduct from "../components/CardProduct"
 import "../styles/products.css"
-import Grid from '@mui/material/Unstable_Grid2';
+
 const Home: FC<any> = (): ReactElement => {
+    const [list, setList] = useState<any[]>([]);
+   
+   
+    const useIsMounted = () => {
+        const isMounted = useRef(false);
+        useEffect(() => {
+          isMounted.current = true;
+          getProducts()
+          .then(items => {
+            if(isMounted.current) {
+              setList(items)
+            }
+          })
+          return () => {
+            isMounted.current = false;
+          };
+        }, []);
+        return isMounted;
+      };
+console.log(useIsMounted())
+console.log(list)
     return (
         <div>
         <Box sx={{
@@ -18,20 +40,16 @@ const Home: FC<any> = (): ReactElement => {
         
    
    <div className="products_gallery">
-
-    <div className="product-item"><CardProduct/></div>
-    <div className="product-item"><CardProduct/></div>
-    <div className="product-item"><CardProduct/></div>
-    <div className="product-item"><CardProduct/></div>
-    <div className="product-item"><CardProduct/></div>
-    <div className="product-item"><CardProduct/></div>
-    <div className="product-item"><CardProduct/></div>
-    <div className="product-item"><CardProduct/></div>
-    <div className="product-item"><CardProduct/></div>
-    <div className="product-item"><CardProduct/></div>
-    <div className="product-item"><CardProduct/></div>
-    <div className="product-item"><CardProduct/></div>
-    <div className="product-item"><CardProduct/></div>
+   
+   {list.map(item =>  <div className="product-item" key={item.code_siigo}>
+    <CardProduct 
+    name={item.name} 
+    price={item.precio} 
+    description={item.description} 
+    img={item.cover_image}/>
+    
+    </div>)}
+   
     
 
    </div>

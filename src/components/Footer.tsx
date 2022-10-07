@@ -10,7 +10,7 @@ export const Footer: FC = (): ReactElement => {
         backgroundColor: "secondary.main",
         paddingTop: "1rem",
         paddingBottom: "1rem",
-        position:"fixed",
+        position:"relative",
         bottom: 0,
         left: 0,
         right: 0,

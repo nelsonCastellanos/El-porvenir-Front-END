@@ -28,7 +28,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Box height="100vh" display="flex" flexDirection="column">
+      <Box height="100vh"  display="flex" flexDirection="column">
         <Router>
           <Navbar />
           <Routes>
