@@ -1,12 +1,23 @@
-import React, {ReactElement, FC,useEffect,useState,useRef} from "react";
+import {ReactElement, FC,useEffect,useState,useRef} from "react";
+import { useNavigate } from "react-router-dom";
 import { getProducts } from "../services/HomeService";
 import {Box, Typography} from "@mui/material";
 import CardProduct from "../components/CardProduct"
 import "../styles/products.css"
 
 const Home: FC<any> = (): ReactElement => {
+
     const [list, setList] = useState<any[]>([]);
-   
+    const navigate = useNavigate();
+    const goToDetailProduct = (productID:number) =>
+    
+   { return (event: React.MouseEvent) => {
+    console.log(productID)
+      navigate({
+        pathname: `product/${productID}`
+      });
+      event.preventDefault();}
+    }
    
     const useIsMounted = () => {
         const isMounted = useRef(false);
@@ -16,6 +27,7 @@ const Home: FC<any> = (): ReactElement => {
           .then(items => {
             if(isMounted.current) {
               setList(items)
+           
             }
           })
           return () => {
@@ -24,8 +36,7 @@ const Home: FC<any> = (): ReactElement => {
         }, []);
         return isMounted;
       };
-console.log(useIsMounted())
-console.log(list)
+
     return (
         <div>
         <Box sx={{
@@ -40,15 +51,15 @@ console.log(list)
         
    
    <div className="products_gallery">
-   
-   {list.map(item =>  <div className="product-item" key={item.code_siigo}>
+  
+   {useIsMounted()?list.map(item =>  <div onClick={goToDetailProduct(item.code_siigo)} className="product-item" key={item.code_siigo}>
     <CardProduct 
     name={item.name} 
     price={item.precio} 
     description={item.description} 
     img={item.cover_image}/>
     
-    </div>)}
+    </div>):<>Error cargando productos</>}
    
     
 
