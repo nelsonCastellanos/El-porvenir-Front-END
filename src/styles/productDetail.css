@@ -1,0 +1,29 @@
+#product_detail_grid{
+    display: flex;
+    flex-wrap:wrap;
+   
+  
+}
+#product_detail_grid>* {
+    flex: 1 1;
+    padding: 1%;
+}
+.column_detail{
+    height: 50%;
+}
+
+.carousel-root {
+    outline: none;
+    width: 100vw;
+}
+.carousel .thumbs-wrapper {
+    margin: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel .thumb.selected, .carousel .thumb:hover {
+    
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 25%) !important;
+}
