@@ -107,7 +107,7 @@ const Navbar: FC = (): ReactElement => {
                 marginLeft: "1rem",
               }}
             >
-              {routes.map((page) => (
+              {routes.filter(page=>page.enabled).map((page) => (
                 <Link
                   key={page.key}
                   component={NavLink}
