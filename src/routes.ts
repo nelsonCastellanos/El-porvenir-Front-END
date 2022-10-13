@@ -1,6 +1,7 @@
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Products from "./pages/Products";
+import ProductDetail from "./pages/ProductDetail";
 
 // other
 import {FC} from "react";
@@ -28,6 +29,13 @@ export const routes: Array<Route> = [
         path: '/about',
         enabled: true,
         component: About
+    },
+    {
+        key: 'products-especify-route',
+        title: 'ProductDetail',
+        path: 'products/product/:id',
+        enabled: false,
+        component: ProductDetail
     },
     {
         key: 'products-route',
