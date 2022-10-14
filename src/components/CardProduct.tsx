@@ -20,7 +20,7 @@ type DonutChartModel = {
 export default function MultiActionAreaCard({name,price,description,img}: DonutChartModel) {
  
   return (
-    <Card sx={{ maxWidth: 345 ,width: "100%"}}>
+    <Card sx={{ maxWidth: 345 ,width: "100%",minHeight:370}}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -29,7 +29,7 @@ export default function MultiActionAreaCard({name,price,description,img}: DonutC
           alt={img?.alt||""}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography minHeight="64px" gutterBottom variant="h5" component="div">
             {name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
