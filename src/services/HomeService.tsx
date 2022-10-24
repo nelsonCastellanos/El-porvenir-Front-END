@@ -7,3 +7,7 @@ export async function getList(): Promise<any> {
     const data = await fetch('http://localhost:8000/products');
     return await data.json();
   }
+  export async function getProductbyId(id:number): Promise<any> {
+    const data = await fetch(`http://localhost:8000/products/?code_siigo=${id}`);
+    return await data.json();
+  }

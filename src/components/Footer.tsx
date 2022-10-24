@@ -11,6 +11,7 @@ export const Footer: FC = (): ReactElement => {
         paddingTop: "1rem",
         paddingBottom: "1rem",
         position:"relative",
+        display:"none",
         bottom: 0,
         left: 0,
         right: 0,

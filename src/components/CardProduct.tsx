@@ -4,11 +4,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
+import {imgModel} from '../models/imageModel'
 
-type imgModel= {
-  full_url: string,
-  alt: string
-}
 
 type DonutChartModel = {
   name: string;
